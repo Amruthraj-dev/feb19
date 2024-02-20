@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .road {
+        transition: transform 2s 2s ease-in-out;
+        transition-duration: 3s;
+      }
+      .car {
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        top: 110px;
+        left: 60px;
+        transform: translate(30px);
+        transition-duration: 3s;
+      }
+      input:checked + img {
+        transform: translate(100px);
+        transform: scale(2, 2);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="road">
+        <img class="road" src="./road.png" />
+      </div>
+      <div class="car">
+        <input type="radio" />Start
+        <img src="./car.png" class="car" />
+      </div>
+    </div>
+  </body>
+</html>
